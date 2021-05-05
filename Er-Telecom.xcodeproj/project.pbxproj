@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,16 @@
 		357E327426426A41002657E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357E327226426A41002657E4 /* Main.storyboard */; };
 		357E327626426A45002657E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357E327526426A45002657E4 /* Assets.xcassets */; };
 		357E327926426A45002657E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357E327726426A45002657E4 /* LaunchScreen.storyboard */; };
+		3585B4ED2642B6D80036BE80 /* NetworkOpenWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585B4EC2642B6D80036BE80 /* NetworkOpenWeather.swift */; };
+		3585B4FD2642BD100036BE80 /* WeekCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585B4FC2642BD100036BE80 /* WeekCurrentWeather.swift */; };
+		3585B5002642BD340036BE80 /* WeekCurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585B4FF2642BD340036BE80 /* WeekCurrentWeatherData.swift */; };
+		3585B5052642C7C70036BE80 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585B5032642C7C70036BE80 /* TableViewCell.swift */; };
+		3585B5062642C7C70036BE80 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3585B5042642C7C70036BE80 /* TableViewCell.xib */; };
+		66FC7BB2710226476BBF015D /* Pods_Er_Telecom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67254737B7C25CA757049A7F /* Pods_Er_Telecom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C56DB9626020270D3A210FD /* Pods-Er-Telecom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Er-Telecom.release.xcconfig"; path = "Target Support Files/Pods-Er-Telecom/Pods-Er-Telecom.release.xcconfig"; sourceTree = "<group>"; };
 		357E326926426A41002657E4 /* Er-Telecom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Er-Telecom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		357E326C26426A41002657E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		357E326E26426A41002657E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,13 @@
 		357E327526426A45002657E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		357E327826426A45002657E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		357E327A26426A45002657E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3585B4EC2642B6D80036BE80 /* NetworkOpenWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOpenWeather.swift; sourceTree = "<group>"; };
+		3585B4FC2642BD100036BE80 /* WeekCurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCurrentWeather.swift; sourceTree = "<group>"; };
+		3585B4FF2642BD340036BE80 /* WeekCurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCurrentWeatherData.swift; sourceTree = "<group>"; };
+		3585B5032642C7C70036BE80 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3585B5042642C7C70036BE80 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		67254737B7C25CA757049A7F /* Pods_Er_Telecom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Er_Telecom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9625B862FE9BD39302EE9A79 /* Pods-Er-Telecom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Er-Telecom.debug.xcconfig"; path = "Target Support Files/Pods-Er-Telecom/Pods-Er-Telecom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FC7BB2710226476BBF015D /* Pods_Er_Telecom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				357E326B26426A41002657E4 /* Er-Telecom */,
 				357E326A26426A41002657E4 /* Products */,
+				A4D2395F194ACE0CD18A4877 /* Pods */,
+				A17252B9115C49A17D255D26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,61 @@
 		357E326B26426A41002657E4 /* Er-Telecom */ = {
 			isa = PBXGroup;
 			children = (
+				3585B4EF2642BB6B0036BE80 /* Modul */,
 				357E326C26426A41002657E4 /* AppDelegate.swift */,
 				357E326E26426A41002657E4 /* SceneDelegate.swift */,
 				357E327026426A41002657E4 /* ViewController.swift */,
+				3585B5022642C7AA0036BE80 /* Cells */,
 				357E327226426A41002657E4 /* Main.storyboard */,
 				357E327526426A45002657E4 /* Assets.xcassets */,
 				357E327726426A45002657E4 /* LaunchScreen.storyboard */,
 				357E327A26426A45002657E4 /* Info.plist */,
+				357E329026427371002657E4 /* Network */,
 			);
 			path = "Er-Telecom";
+			sourceTree = "<group>";
+		};
+		357E329026427371002657E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3585B4EC2642B6D80036BE80 /* NetworkOpenWeather.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3585B4EF2642BB6B0036BE80 /* Modul */ = {
+			isa = PBXGroup;
+			children = (
+				3585B4FC2642BD100036BE80 /* WeekCurrentWeather.swift */,
+				3585B4FF2642BD340036BE80 /* WeekCurrentWeatherData.swift */,
+			);
+			path = Modul;
+			sourceTree = "<group>";
+		};
+		3585B5022642C7AA0036BE80 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3585B5032642C7C70036BE80 /* TableViewCell.swift */,
+				3585B5042642C7C70036BE80 /* TableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A17252B9115C49A17D255D26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67254737B7C25CA757049A7F /* Pods_Er_Telecom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4D2395F194ACE0CD18A4877 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9625B862FE9BD39302EE9A79 /* Pods-Er-Telecom.debug.xcconfig */,
+				1C56DB9626020270D3A210FD /* Pods-Er-Telecom.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 357E327D26426A45002657E4 /* Build configuration list for PBXNativeTarget "Er-Telecom" */;
 			buildPhases = (
+				DF06BB4315845B1C0409733A /* [CP] Check Pods Manifest.lock */,
 				357E326526426A41002657E4 /* Sources */,
 				357E326626426A41002657E4 /* Frameworks */,
 				357E326726426A41002657E4 /* Resources */,
+				6832F3A8F3B0D9F270EC5DE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				357E327926426A45002657E4 /* LaunchScreen.storyboard in Resources */,
+				3585B5062642C7C70036BE80 /* TableViewCell.xib in Resources */,
 				357E327626426A45002657E4 /* Assets.xcassets in Resources */,
 				357E327426426A41002657E4 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +198,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6832F3A8F3B0D9F270EC5DE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Er-Telecom/Pods-Er-Telecom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Er-Telecom/Pods-Er-Telecom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Er-Telecom/Pods-Er-Telecom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF06BB4315845B1C0409733A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Er-Telecom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		357E326526426A41002657E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3585B5002642BD340036BE80 /* WeekCurrentWeatherData.swift in Sources */,
+				3585B4FD2642BD100036BE80 /* WeekCurrentWeather.swift in Sources */,
 				357E327126426A41002657E4 /* ViewController.swift in Sources */,
 				357E326D26426A41002657E4 /* AppDelegate.swift in Sources */,
 				357E326F26426A41002657E4 /* SceneDelegate.swift in Sources */,
+				3585B5052642C7C70036BE80 /* TableViewCell.swift in Sources */,
+				3585B4ED2642B6D80036BE80 /* NetworkOpenWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +395,7 @@
 		};
 		357E327E26426A45002657E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9625B862FE9BD39302EE9A79 /* Pods-Er-Telecom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +415,7 @@
 		};
 		357E327F26426A45002657E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C56DB9626020270D3A210FD /* Pods-Er-Telecom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
